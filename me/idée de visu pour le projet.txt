@@ -1,0 +1,4 @@
+boutons pour télécharger le notebook associé
+boutons affiché ou pas les résultats
+
+mettre des gifs / emojis, changer titre de la page de streamlit
