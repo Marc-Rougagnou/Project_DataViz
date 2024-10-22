@@ -20,6 +20,11 @@ Projet réalisé par **Marc Rougagnou** dans le cadre de mon Master 1 en Data En
 - **Matplotlib**, **Seaborn**, **Plotly**, **Altair** : Création des visualisations.
 - **Missingno** : Gestion des valeurs manquantes dans les données.
 
+## Lancement
+Pour lancer ce projet il faut lancer votre cmd se diriger vers le fichier que vous avez télécharger. Une fois cela fait aller à l'intérieur du dossier 'me' puis lancer la commande suivante:
+streamlit run me.py
+Vous pourrez à ce moment vous balader dans les différents onglets.
+
 ## Fichier de données
 
 Le projet utilise le fichier CSV `dataBacAcademie.csv`, que vous pouvez récupérer depuis le site [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/le-baccalaureat-par-academie/).
