@@ -71,7 +71,7 @@ st.markdown("<h3 style='color: orange;'>1. Analyze data to make changes if neces
 
 #%%
 
-path = "./dataBacAcademie.csv"
+path = os.path.join(os.path.dirname(__file__), 'dataBacAcademie.csv')
 df = pd.read_csv(path, delimiter=";")
 path_code = '''
 df = pd.read_csv(path, delimiter=";")
