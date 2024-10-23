@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import base64
 st.set_page_config(page_title='Portfolio of Marc Rougagnou', page_icon = '👀')
 
@@ -7,7 +8,8 @@ st.write("<h1 style='text-align: center; color: Coral   ;'>📋 My Portfolio !�
 #links
 linkedin="https://www.linkedin.com/in/marc-rougagnou-data-science/"
 github="https://github.com/Marc-Rougagnou"
-CV_link = "./images/CV Marc ROUGAGNOU.pdf"
+CV_link = os.path.join(os.path.dirname(__file__), './images/CV Marc ROUGAGNOU.pdf')
+
 CSV_link = "./dataBacAcademie.csv"
 Data_gouv_link = "https://www.data.gouv.fr/fr/datasets/le-baccalaureat-par-academie/"
 
@@ -34,10 +36,12 @@ with st.sidebar:
     st.markdown("<h4 style='color: Darkorange;'><strong>Links</strong></h4>", unsafe_allow_html=True)
     col1,col2 = st.columns(2)
     with col1:    
-        st.image("./images/gitlogo.png", width=30)
+        gitlogo = os.path.join(os.path.dirname(__file__), './images/gitlogo.png')
+        st.image(gitlogo, width = 30)
         st.markdown("[My Github](%s)" %github)
     with col2:
-        st.image("./images/link.png", width=30)
+        linkd = os.path.join(os.path.dirname(__file__), './images/link.png')
+        st.image(linkd, width=30)
         st.markdown("[My Linkedin](%s)" %linkedin)
 
 tab1, tab2 = st.tabs(["_About Me_", "_My projects_"])
@@ -68,14 +72,14 @@ with tab1:
     st.markdown("<h4 style='color: Darkorange;'><strong>My links</strong></h4>", unsafe_allow_html=True)
     col1, col2 = st.columns([0.1,1])
     with col1:
-        st.image("./images/gitlogo.png", width=50)
+        st.image(gitlogo, width=50)
         
     with col2:
         st.markdown("[My Github](%s)" %github)
 
     col3, col4 = st.columns([0.1,1])
     with col3:
-        st.image("./images/link.png", width=50)
+        st.image(linkd, width=50)
     with col4:
         st.markdown("[My Linkedin](%s)" %linkedin)
         
@@ -93,19 +97,18 @@ with tab1:
         file_name="CV_Marc_ROUGAGNOU.pdf",
         mime="application/pdf")
 
-    #mettre *** c'est pour en gras et en italique et entre _ _ c'est en italique
-    st.write("***Here is an overview of it:***")
-    st.markdown(f'<iframe src="data:application/pdf;base64,{CV_base64}" width="400" height="600" type="application/pdf"></iframe>',unsafe_allow_html=True)
-
 
 with tab2:
     st.markdown("<h2 style='color: orange;'><strong>My Projects</h2>", unsafe_allow_html=True)
     st.write("On that page there is some examples of my work.\n\nYou can have a look at it and try to do your analyses with the links of datasets.")
     
     with st.expander("***Project on the dataset 'Bac_Academie'***"):
-        exec(open("Bac-Projet.py").read())
+        csv_bac = os.path.join(os.path.dirname(__file__), 'Bac-Projet.py')
+        exec(open(csv_bac).read())
 
     with st.expander("***Work on Uber dataset***"):
+        csv_bac = os.path.join(os.path.dirname(__file__), 'Bac-Projet.py')
+        exec(open(csv_bac).read())
         exec(open("Uber-dataset.py").read())
     
     
