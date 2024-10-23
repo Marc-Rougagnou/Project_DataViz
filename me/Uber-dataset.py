@@ -14,7 +14,7 @@ st.write("This is the result of the notebook that we have done in class during S
 
 st.markdown("<h3 style='color: Darkorange;'><strong>Link to the dataset</strong></h3>", unsafe_allow_html=True)
 
-path = "uber-raw-data-apr14.csv" 
+path = os.path.join(os.path.dirname(__file__), 'uber-raw-data-apr14.csv')
 df = pd.read_csv(path, delimiter = ',')
 df=df[:80000]
 
