@@ -17,7 +17,6 @@ with st.sidebar:
     st.markdown("<h4 style='color: Darkorange;'><strong>Contact</strong></h4>", unsafe_allow_html=True)
     st.write(
         """
-        - Phone number: +33781050464 📞
         - E-mail: marc.rougagnou@efrei.net 📧
         - Location: Saint-Maur-des-Fossés 🏠
         """
