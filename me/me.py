@@ -107,8 +107,7 @@ with tab2:
         exec(open(csv_bac).read())
 
     with st.expander("***Work on Uber dataset***"):
-        csv_bac = os.path.join(os.path.dirname(__file__), 'Bac-Projet.py')
-        exec(open(csv_bac).read())
-        exec(open("Uber-dataset.py").read())
+        csv_uber = os.path.join(os.path.dirname(__file__), 'Uber-dataset.py')
+        exec(open(csv_uber).read())
     
     
