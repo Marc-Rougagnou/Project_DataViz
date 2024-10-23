@@ -10,7 +10,6 @@ linkedin="https://www.linkedin.com/in/marc-rougagnou-data-science/"
 github="https://github.com/Marc-Rougagnou"
 CV_link = os.path.join(os.path.dirname(__file__), 'images', 'CV Marc ROUGAGNOU.pdf')
 
-CSV_link = "./dataBacAcademie.csv"
 Data_gouv_link = "https://www.data.gouv.fr/fr/datasets/le-baccalaureat-par-academie/"
 
 #sidebar côté gauche
