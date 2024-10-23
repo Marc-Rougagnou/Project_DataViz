@@ -31,7 +31,7 @@ csv = df.to_csv(index=False).encode('utf-8')
 st.download_button(
     label="**Dowload the dataset**",
     data=csv,
-    file_name="uber-raw-data-apr14.csv",
+    file_name=path,
     mime="text/csv")
 
 
