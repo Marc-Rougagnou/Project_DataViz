@@ -21,10 +21,7 @@ Projet réalisé par **Marc Rougagnou** dans le cadre de mon Master 1 en Data En
 - **Missingno** : Gestion des valeurs manquantes dans les données.
 
 ## Lancement
-Pour lancer ce projet il faut lancer votre cmd se diriger vers le fichier que vous avez télécharger. Une fois cela fait aller à l'intérieur du dossier 'me' puis lancer la commande suivante:
-streamlit run me.py
-
-Vous pourrez à ce moment vous balader dans les différents onglets.
+Pour lancer ce projet il faut simplement se rendre sur ce site : https://projectdataviz-marc-rougagnou.streamlit.app/
 
 ## Fichier de données
 
