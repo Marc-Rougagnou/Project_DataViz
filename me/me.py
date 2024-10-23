@@ -8,7 +8,7 @@ st.write("<h1 style='text-align: center; color: Coral   ;'>ðŸ“‹ My Portfolio !ðŸ
 #links
 linkedin="https://www.linkedin.com/in/marc-rougagnou-data-science/"
 github="https://github.com/Marc-Rougagnou"
-CV_link = os.path.join(os.path.dirname(__file__), './images/CV Marc ROUGAGNOU.pdf')
+CV_link = os.path.join(os.path.dirname(__file__), 'images', 'CV Marc ROUGAGNOU.pdf')
 
 CSV_link = "./dataBacAcademie.csv"
 Data_gouv_link = "https://www.data.gouv.fr/fr/datasets/le-baccalaureat-par-academie/"
@@ -36,7 +36,7 @@ with st.sidebar:
     st.markdown("<h4 style='color: Darkorange;'><strong>Links</strong></h4>", unsafe_allow_html=True)
     col1,col2 = st.columns(2)
     with col1:    
-        gitlogo = os.path.join(os.path.dirname(__file__), './images/gitlogo.png')
+        gitlogo = os.path.join(os.path.dirname(__file__), 'images', 'gitlogo.png')
         st.image(gitlogo, width = 30)
         st.markdown("[My Github](%s)" %github)
     with col2:
