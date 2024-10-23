@@ -5,7 +5,8 @@ import seaborn as sns
 import plotly.express as px
 import missingno as msno
 
-CSV_link = "./dataBacAcademie.csv"
+CSV_link = os.path.join(os.path.dirname(__file__), 'dataBacAcademie.csv')
+
 Data_gouv_link = "https://www.data.gouv.fr/fr/datasets/le-baccalaureat-par-academie/"
 
 st.markdown("<h1 style='color: orange;'><strong>Bac-Academic data set project</strong></h1>", unsafe_allow_html=True)
